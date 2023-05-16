@@ -33,7 +33,7 @@ export class HomePage {
 
     modal.onDidDismiss().then((newTaskObj) => {
       if (newTaskObj.data) {
-        newTaskObj.data.completed = false; // Add 'completed' property to new task
+        newTaskObj.data.completed = false; 
         this.todoList.push(newTaskObj.data);
       }
     });
